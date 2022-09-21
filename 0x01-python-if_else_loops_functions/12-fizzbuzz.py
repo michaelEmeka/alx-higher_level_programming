@@ -8,4 +8,4 @@ for num in range(1, 100):
         print("Buzz ", end="")
     else:
         print("{:d} ".format(num), end="")
-print("Buzz")
+print("Buzz ")
