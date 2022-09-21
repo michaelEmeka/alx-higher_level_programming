@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 for num in range(100):
-    if num % 3 == 0 and num % 3 == 0:
+    if num % 3 == 0 and num % 5 == 0:
         print("FizzBuzz ", end="")
     elif num % 3 == 0:
         print("Fizz ", end="")
