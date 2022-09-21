@@ -6,4 +6,4 @@ def uppercase(str):
         if asci > 96 and asci < 124:
             print("{}".format(chr(asci - 32)), end="")
         else:
-            print("{}".format(str[i]))
+            print("{}".format(str[i]), end="")
