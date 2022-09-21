@@ -6,7 +6,7 @@ for n in range(0, 99):
 	elif n < 16:
 		print(chr(97 + n % 10))
 	else:
-		print("{}".format(n // 16), end="")
+		print(n // 16, end="")
 		if n % 16 > 9:
 			print(chr((97 + (n % 16 % 10))))
 		else:
