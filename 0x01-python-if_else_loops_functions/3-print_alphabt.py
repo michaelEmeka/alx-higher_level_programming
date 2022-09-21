@@ -3,4 +3,4 @@ for letter in range(97, 123):
     if char(letter) == 'q' or char(letter) == 'e':
         continue
     else:
-        print(f"{letter:c}", end = "")
+        print("{}".format(char(letter)), end = "")
