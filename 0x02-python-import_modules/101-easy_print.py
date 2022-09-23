@@ -1,2 +1,2 @@
-python3 >>> from sys import stdout
-python3 >>> stdout.write("#pythoniscool")
+#!/usr/bin/python3
+__import__("os").write(1, "#pythoniscool\n".encode("UTF-8"))
