@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 def new_in_list(my_list, idx, element):
     clone_list = my_list.copy()
     length = len(my_list)
