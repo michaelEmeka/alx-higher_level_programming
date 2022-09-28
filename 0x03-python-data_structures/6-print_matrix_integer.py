@@ -5,4 +5,4 @@ def print_matrix_integer(matrix=[[]]):
     for row in range(height):
         for col in range(width):
             print("{:d}{}".format(matrix[row][col], " " if col + 1 != width else ""), end="")
-        print()i
+        print()
