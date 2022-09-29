@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    sqr_mtrix = matrix.copy()
-    j = 0
+    sqr_matrix = matrix.copy()
     for i in matrix:
-        sqr_mtrix[j] = [x**2 for x in i]
-        j = j + 1
-        return sqr_mtrix
+        sqr_matrix[i] = [x**2 for x in matrix[i]]
+    return sqr_matrix
