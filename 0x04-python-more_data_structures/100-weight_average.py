@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
+    if my_list == []:
+        return 0.00
     p = 1
     addition = 0
     divisor = 0
