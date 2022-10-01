@@ -8,13 +8,10 @@ def roman_to_int(roman_string):
     output = 0
     prev = 1001
     for val in rS:
-        curr = int(rome.get(val))
+        curr = rome.get(val)
         if curr <= prev:
             output += curr
         else:
-            if output > curr:
-                output -= curr
-            else:
-                output = (output - curr) * -1
-                prev = curr
+            output += curr - prev - prev
+            prev = curr
     return output
