@@ -6,8 +6,7 @@ def roman_to_int(roman_string):
     if rS is None or type(rS) is not str:
         return None
     output = 0
-	prev = 1001
-
+    prev = 1001
     for val in rS:
         curr = int(rome.get(val))
         if curr <= prev:
