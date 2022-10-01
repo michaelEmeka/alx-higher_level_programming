@@ -5,5 +5,5 @@ def multiply_by_2(a_dictionary):
     for i in dictn:
         val = dictn.get(i) * 2
         dictn.update({i: val})
- 
-   return dictn
+
+    return dictn
