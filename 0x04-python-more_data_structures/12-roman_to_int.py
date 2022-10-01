@@ -4,7 +4,7 @@ def roman_to_int(roman_string):
     rS = roman_string
 
     if rS is None or type(rS) is not str:
-        return None
+        return 0
     output = 0
     prev = 0
     for val in rS:
@@ -13,5 +13,5 @@ def roman_to_int(roman_string):
             output += curr
         else:
             output += curr - prev - prev
-            prev = curr
+        prev = curr
     return output
