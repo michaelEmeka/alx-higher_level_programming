@@ -10,7 +10,7 @@ def list_division(my_list_1, my_list_2, list_length):
         my_list_2: divisor list
         list_length: list length to be divided
     """
-    new_list = [range(list_length)]
+    new_list = list(range(list_length))
     for i in range(list_length):
         try:
             val = my_list_1[i] / my_list_2[i]
