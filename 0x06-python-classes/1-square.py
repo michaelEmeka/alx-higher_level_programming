@@ -3,8 +3,9 @@
 
 class Square:
     """Defines a new square based on:
+
     args:
-        size
-        """
+        size(int)
+    """
     def __init__(self, size):
         self.__size = size
