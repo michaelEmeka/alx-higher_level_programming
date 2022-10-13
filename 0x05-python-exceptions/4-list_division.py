@@ -25,7 +25,7 @@ def list_division(my_list_1, my_list_2, list_length):
         except IndexError:
             print("out of range")
             val = 0
-            break
+            continue
         finally:
             new_list[i] = val
 
