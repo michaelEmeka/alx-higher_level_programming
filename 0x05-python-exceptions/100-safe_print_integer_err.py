@@ -16,3 +16,4 @@ def safe_print_integer_err(value):
         return True
     except (TypeError, ValueError) as err:
         stderr.write("Exception: {}".format(err))
+        return False
