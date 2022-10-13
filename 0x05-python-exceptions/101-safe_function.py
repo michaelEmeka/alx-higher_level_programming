@@ -9,8 +9,8 @@ def safe_function(fct, *args):
         fct: a pointer to a function
         args: arguments for fct
     """
-    a = int(args[0])
-    b = int(args[1])
+    a = args[0]
+    b = args[1]
     try:
         ret = fct(a, b);
     except ZeroDivisionError as err:
