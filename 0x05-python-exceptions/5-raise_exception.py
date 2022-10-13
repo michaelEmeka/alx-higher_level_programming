@@ -2,4 +2,4 @@
 
 def raise_exception():
     """Raises a type expression"""
-    return TypeError
+    return "hello" / 2
