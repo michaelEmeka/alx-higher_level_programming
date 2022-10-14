@@ -51,4 +51,5 @@ class Square:
         else:
             for i in range(lb):
                 for j in range(lb):
-                    print("#")
+                    print("#", end="")
+                print()
