@@ -44,7 +44,7 @@ class Square:
         """
         return self.__position
 
-    @property.setter
+    @position.setter
     def position(self, value):
         """
         Sets a square's position private attribute.
