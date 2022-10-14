@@ -20,9 +20,10 @@ class Square:
             val = size / 1
         except TypeError:
             raise TypeError("size must be an integer")
+
         if size >= 0:
             val = size
         else:
-            raise("size must be >= 0")
+            raise ValueError("size must be >= 0")
 
         self.__size = val
