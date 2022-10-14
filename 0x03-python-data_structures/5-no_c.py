@@ -7,4 +7,4 @@ def no_c(my_string):
         if my_string[i] in delim:
             my_string.remove(my_string[i])
     my_string = "".join(my_string)
-    return my_string
+    return my_strin
