@@ -14,10 +14,11 @@ class Square:
             size: square private size instamce attribute.
             self: class instance
         """
-        if size < 0:
-            raise ValueError("size must be >= 0")
+
         try:
-            num = size / 1
+            if size >= 0:
+                self.__size = int(size)
         except TypeError:
             raise TypeError("size must be an integer")
-        self.__size = num
+        except ValueError:
+            raise ValueError("size must be >= 0")
