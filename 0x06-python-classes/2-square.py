@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+
 """
     A square Class.
 """
+
 
 class Square:
     """
@@ -14,4 +16,5 @@ class Square:
             size: square private size instamce attribute.
             self: class instance
         """
+
         self.__size = size
