@@ -3,7 +3,7 @@ def magic_calculation(a, b):
     """
     Performs a calculation likewise a given python bytecode.
     """
-    add  = __import__("magic_calculation_102").add
+    add = __import__("magic_calculation_102").add
     sub = __import__("magic_calculation_102").sub
 
     if a < b:
