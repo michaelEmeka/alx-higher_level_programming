@@ -1,1 +1,1 @@
-More on python_classes and oop
+More on python classes in Object Oriented Programming.
