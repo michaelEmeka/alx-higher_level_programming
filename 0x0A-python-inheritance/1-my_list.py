@@ -10,10 +10,11 @@ class MyList(list):
         list.
     """
     def __init__(self):
-    """
-    Instantiation.
-    """
+        """
+        Instantiation.
+        """
         list.__init__(self)
+
     def print_sorted(self):
         """
         Prints sorted list.
