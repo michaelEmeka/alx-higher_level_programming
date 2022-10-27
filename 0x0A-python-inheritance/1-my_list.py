@@ -9,7 +9,11 @@ class MyList(list):
     Args:
         list.
     """
-
+    def __init__(self):
+    """
+    Instantiation.
+    """
+        list.__init__(self)
     def print_sorted(self):
         """
         Prints sorted list.
