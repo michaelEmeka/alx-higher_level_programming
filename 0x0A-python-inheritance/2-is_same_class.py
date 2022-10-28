@@ -2,6 +2,7 @@
 
 """Defines a function that checks for an object's attribute."""
 
+
 def is_same_class(obj, a_class):
     """
     Checks if an object is an instance of the specified class.
