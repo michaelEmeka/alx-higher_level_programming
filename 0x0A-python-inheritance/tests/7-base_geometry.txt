@@ -1,0 +1,32 @@
+Test for 7-base_geometry.py
+-----------------------------
+case 0: import
+>>>Base_Geometry = __import__('7-base_geometry').BaseGeometry
+>>>
+-----------------------------
+
+case 1: common cases
+>>>Base_Geometry = __import__('7-base_geometry').BaseGeometry
+>>>bg = BaseGeometry()
+>>>bg.integer_validator("my_int", 12)
+>>>bg.integer_validator("width", 89)
+>>>
+-----------------------------
+
+case 2: non-int values
+>>>Base_Geometry = __import__('7-base_geometry').BaseGeometry
+>>>bg = BaseGeometry()
+>>>bg.integer_validator("my_age", "seven")
+[TypeError] my_age must be an integer
+>>>bg.integer_validator("weight(kg)", 7.5)
+[TypeError] weight(kg) must be an integer
+
+-----------------------------
+
+case 3: integer <= 0
+>>>Base_Geometry = __import__('7-base_geometry').BaseGeometry
+>>>bg = Base_Geometry()
+>>>bg.integer_validator("distance(m)", -9)
+[ValueError] distance(m) must be greater than 0
+
+-----------------------------
