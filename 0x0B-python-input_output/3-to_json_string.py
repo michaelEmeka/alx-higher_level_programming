@@ -2,6 +2,7 @@
 """Defines a json string function."""
 import json
 
+
 def to_json_string(my_obj):
     """
     This function takes an object(string) and returns
