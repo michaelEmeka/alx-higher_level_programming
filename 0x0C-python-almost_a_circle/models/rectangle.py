@@ -118,4 +118,4 @@ class Rectangle(Base):
                 setattr(self, att[v], args[v])
 
         for k, v in kwargs.items():
-            setattr(self, k, v);
+            setattr(self, k, v)
