@@ -83,8 +83,8 @@ class Rectangle(Base):
         """Prints a grid of harshes "#" tho represent
         the shape"""
         w = h = 0
-        while h < self.__width:
-            while w < self.__height:
+        while h < self.__height:
+            while w < self.__width:
                 print("#", end="")
                 w += 1
             print()
