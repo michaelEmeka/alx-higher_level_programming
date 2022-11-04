@@ -78,3 +78,15 @@ class Rectangle(Base):
     def area(self):
         """Returns the area of triangle."""
         return (self.__width * self.__height)
+
+    def display(self):
+        """Prints a grid of harshes "#" tho represent
+        the shape"""
+        w = h = 0
+        while w < self.__width:
+            while h < self.__height:
+                print("#", end="")
+                h += 1
+            print("\n")
+            h = 0
+            w += 1
