@@ -23,34 +23,38 @@ class Rectangle(Base):
         self.y = y
         Base.__init__(self, id)
 
+    @property
+    def width(self):
+        """Set/get width of the rectangle."""
+        return self.__width
+
     @width.setter
     def width(self, width):
         self.__width = width
 
     @property
-    def width(self):
-        return self.__width
+    def height(self):
+        """Set/get height of the rectangle."""
+        return self.__height
 
     @height.setter
     def height(self, height):
         self.__height = height
 
     @property
-    def height(self):
-        return self.__height
+    def x(self):
+        """Set/get x coordinate of the rectangle."""
+        return self.__x
 
     @x.setter
     def x(self, x):
         self.__x = x
 
     @property
-    def x(self):
-        return self.__x
+    def y(self):
+        """Set/get y coordinate of the rectangle."""
+        return self.__y
 
     @y.setter
     def y(self, y):
         self.__y = y
-
-    @property
-    def y(self):
-        return self.__y
