@@ -90,3 +90,12 @@ class Rectangle(Base):
             print()
             w = 0
             h += 1
+
+    def __str__(self):
+        """Overides the __str__ method so it prints
+        [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
+        message = "[{}] ".format(self.__class__.__name__)
+        message += "({}) ".format(self.id)
+        message += "{}/{} - ".format(self.__x, self.__y)
+        message += "{}/{}".format(self.__width, self.__height)
+        return message
