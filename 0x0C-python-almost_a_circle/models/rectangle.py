@@ -87,6 +87,6 @@ class Rectangle(Base):
             while h < self.__height:
                 print("#", end="")
                 h += 1
-            print("\n")
+            print()
             h = 0
             w += 1
