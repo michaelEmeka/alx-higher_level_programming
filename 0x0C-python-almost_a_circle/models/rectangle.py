@@ -17,10 +17,10 @@ class Rectangle(Base):
             y: y coordinate.
             id: shape id.
         """
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         Base.__init__(self, id)
 
     @width.setter
@@ -53,4 +53,4 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        return y
+        return self.__y
