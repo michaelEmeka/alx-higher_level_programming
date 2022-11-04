@@ -82,7 +82,9 @@ class Rectangle(Base):
     def display(self):
         """Prints a grid of harshes "#" tho represent
         the shape"""
-        w = h = x = 0
+        w = h = x = y = 0
+        for y in range(self.__y):
+            print()
         while h < self.__height:
             while x < self.__x:
                 print(" ", end="")
