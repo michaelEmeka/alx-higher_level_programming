@@ -122,3 +122,8 @@ class Rectangle(Base):
         else:
             for k, v in kwargs.items():
                 setattr(self, k, v)
+
+    def to_dictionary(self):
+        """Returns the dictionary representation of an
+        instance."""
+        return self.__dict__
