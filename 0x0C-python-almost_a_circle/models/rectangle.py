@@ -102,10 +102,7 @@ class Rectangle(Base):
         message = "[{}] ".format(self.__class__.__name__)
         message += "({}) ".format(self.id)
         message += "{}/{} - ".format(self.__x, self.__y)
-        if self.__width != self.__height:
-            message += "{}/{}".format(self.__width, self.__height)
-        else:
-            message += "{}".format(self.__width)
+        message += "{}/{}".format(self.__width, self.__height)
         return message
 
     def update(self, *args, **kwargs):
