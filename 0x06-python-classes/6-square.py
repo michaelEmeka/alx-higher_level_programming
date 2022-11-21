@@ -76,8 +76,10 @@ class Square:
         if lb == 0:
             print()
         else:
+            for y in range(pos[1]):
+                print("")
             for i in range(lb):
-                for p in range(pos[0]):
+                for x in range(pos[0]):
                     print(" ", end="")
                 for j in range(lb):
                     print("#", end="")
