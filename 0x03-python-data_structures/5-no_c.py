@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    length = len(my_string)
-    my_string = list(my_string)
-    delim = "cC"
-    for i in range(length):
-        if my_string[i] in delim:
-            my_string.remove(my_string[i])
-    my_string = "".join(my_string)
-    return my_strin
+    """
+    Removes 'c' or 'C' from my_string and returns a new string.
+    """
+    new_string = my_string.translate({ord(i): None for i in 'cC'})
+    return new_string
