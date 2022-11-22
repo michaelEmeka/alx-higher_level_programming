@@ -110,7 +110,7 @@ class Rectangle:
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """
-        A static class method that returns the bigger of 
+        A static class method that returns the bigger of
         two rectangles.
         Raise: TypeError if either rect1 or rect2 is not an
             instance of Rectangle.
