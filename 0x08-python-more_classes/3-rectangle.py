@@ -88,6 +88,6 @@ class Rectangle:
             for j in range(w):
                 output.append("#")
             if i != h:
-                output.append"\n"
+                output.append("\n")
         output = "".join(output)
         return output
