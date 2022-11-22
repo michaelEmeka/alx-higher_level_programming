@@ -91,7 +91,7 @@ class Rectangle:
             return ""
         for i in range(h):
             for j in range(w):
-                output.append(str(elf.print_symbol))
+                output.append(str(self.print_symbol))
             if i != h - 1:
                 output.append("\n")
         return ("".join(output))
