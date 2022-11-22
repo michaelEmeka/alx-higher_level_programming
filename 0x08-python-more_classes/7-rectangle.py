@@ -86,15 +86,15 @@ class Rectangle:
         """Prints the rectangle."""
         w = self.__width
         h = self.__height
-        output = ""
+        output = []
         if w == 0 or h == 0:
-            return output
+            return ""
         for i in range(h):
             for j in range(w):
-                output += self.print_symbol
+                output.append(self.print_symbol)
             if i != h - 1:
-                output += "\n"
-        return (output)
+                output.append("\n")
+        return ("".join(output))
 
     def __repr__(self):
         """Returns a string representation of the rectangle."""
