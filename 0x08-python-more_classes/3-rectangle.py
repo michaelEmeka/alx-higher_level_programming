@@ -81,12 +81,13 @@ class Rectangle:
         """Prints the rectangle."""
         w = self.__width
         h = self.__height
-        output = ""
+        output = []
         if w == 0 or h == 0:
-            return output
+            return ""
         for i in range(h):
             for j in range(w):
-                output += "#"
+                output.append("#")
             if i != h:
-                output += "\n"
+                output.append"\n"
+        output = "".join(output)
         return output
