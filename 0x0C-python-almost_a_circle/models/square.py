@@ -61,18 +61,21 @@ class Square(Rectangle):
                     self.x = v
                 elif k == "y":
                     self.y = v
-
-        def __str__(self):
-            """Return the print() and str() representation
-            of a Square."""
+    def __str__(self):
+        """
+        Return the print() and str() representation
+            of a Square.
+        """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
-
-        def to_dictionary(self):
-            """Returns the dictionary representation of
-            a Square."""
-            return {"id": self.id,
-                    "size": self.width,
-                    "x": self.x,
-                    "y": self.y
-                    }
+    
+    def to_dictionary(self):
+        """
+        Returns the dictionary representation of
+        a Square.
+        """
+        return {"id": self.id,
+                "size": self.width,
+                "x": self.x,
+                "y": self.y
+                }
