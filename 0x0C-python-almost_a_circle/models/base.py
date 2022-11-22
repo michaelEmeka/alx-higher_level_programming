@@ -36,5 +36,5 @@ class Base:
         to a file.
         """
         filename = list_objs[0].__class__.__name__ + ".json"
-            with open(filename, "w", encoding="utf-8") as f:
-                f.write(to_json_string)
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(to_json_string(list_objs))
