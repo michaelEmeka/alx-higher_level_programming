@@ -24,4 +24,6 @@ class Base:
         Returns the JSON string representation of
         list_dictionaries.
         """
-        return (json.dumps(list_dictionaries))
+        if list_dictionaries is not None:
+            return (json.dumps(list_dictionaries))
+        return "[]"
