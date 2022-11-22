@@ -87,6 +87,6 @@ class Rectangle:
         for i in range(h):
             for j in range(w):
                 output += "#"
-            output += "\n"
-        output.pop()
+            if i != h:
+                output += "\n"
         return output
